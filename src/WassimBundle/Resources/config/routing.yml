@@ -1,0 +1,3 @@
+wassim_homepage:
+    path:     /
+    defaults: { _controller: WassimBundle:Default:index }

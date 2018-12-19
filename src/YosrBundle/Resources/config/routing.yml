@@ -1,0 +1,3 @@
+yosr_homepage:
+    path:     /
+    defaults: { _controller: YosrBundle:Default:index }

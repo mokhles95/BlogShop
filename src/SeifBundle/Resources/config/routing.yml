@@ -1,0 +1,3 @@
+seif_homepage:
+    path:     /
+    defaults: { _controller: SeifBundle:Default:index }

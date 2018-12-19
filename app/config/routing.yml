@@ -1,0 +1,31 @@
+seif:
+    resource: "@SeifBundle/Resources/config/routing.yml"
+    prefix:   /
+
+sofiene:
+    resource: "@SofieneBundle/Resources/config/routing.yml"
+    prefix:   /
+
+wassim:
+    resource: "@WassimBundle/Resources/config/routing.yml"
+    prefix:   /
+
+chaima:
+    resource: "@ChaimaBundle/Resources/config/routing.yml"
+    prefix:   /
+
+moukhles:
+    resource: "@MoukhlesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+yosr:
+    resource: "@YosrBundle/Resources/config/routing.yml"
+    prefix:   /
+
+entity:
+    resource: "@EntityBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

@@ -1,0 +1,3 @@
+moukhles_homepage:
+    path:     /
+    defaults: { _controller: MoukhlesBundle:Default:index }

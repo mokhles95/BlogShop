@@ -1,0 +1,3 @@
+chaima_homepage:
+    path:     /
+    defaults: { _controller: ChaimaBundle:Default:index }
