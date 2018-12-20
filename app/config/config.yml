@@ -37,6 +37,8 @@ framework:
     assets: ~
     php_errors:
         log: true
+    templating:
+      engines: ['twig']
 
 # Twig Configuration
 twig:
@@ -76,3 +78,12 @@ swiftmailer:
 sensio_framework_extra:
    router:
         annotations: false
+
+
+fos_user:
+    db_driver: orm # other valid values are 'mongodb' and 'couchdb'
+    firewall_name: main
+    user_class: AppBundle\Entity\UserF
+    from_email:
+        address: "mokhleshaj@gmail.com"
+        sender_name: "aaaa"

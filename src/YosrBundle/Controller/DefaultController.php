@@ -3,11 +3,12 @@
 namespace YosrBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('YosrBundle:Default:index.html.twig');
+        return $this->render('@Yosr/Default/index.html.twig');
     }
 }

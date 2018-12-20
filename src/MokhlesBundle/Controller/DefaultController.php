@@ -3,11 +3,12 @@
 namespace MokhlesBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('MoukhlesBundle:Default:index.html.twig');
+        return $this->render('@Mokhles/Default/index.html.twig');
     }
 }

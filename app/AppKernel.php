@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new WassimBundle\WassimBundle(),
             new SofieneBundle\SofieneBundle(),
             new SeifBundle\SeifBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
