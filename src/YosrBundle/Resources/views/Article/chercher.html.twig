@@ -1,0 +1,22 @@
+<center>
+    <h3>RECHERCHER UN ARTICLE</h3>
+    <table>
+        <form method="post">
+        <tr>
+            <td><label>id</label></td>
+            <td><input type="text" name="id" required><br></td>
+        </tr>
+            <tr><td><input type="submit" value="Chercher"></td></tr>
+        </form>
+    </table>
+    <br><br><br>
+    {% for article in articles %}
+        <fieldset>
+            <legend>id Article {{ article.id }}</legend>
+            <b>Utilisateur : </b> {{ article.user.nom }} {{ article.user.prenom }}<br>
+            <b>Sub Categorie : </b> {{ article.SubCateg.nom }}<br>
+            <b>Saved Article : </b> {{ article.SavedA.id }}<br>
+        </fieldset>
+    {% endfor %}
+</center>
+

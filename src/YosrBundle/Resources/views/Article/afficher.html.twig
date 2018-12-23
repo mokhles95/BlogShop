@@ -1,0 +1,21 @@
+<center>
+    <h1 style="color: #A43E4C">Articles </h1>
+    <table border="2" id="tab" >
+        <th bgcolor="#AC1414" style="color: #FFFFFF" >l'utilisateur</th>
+        <th bgcolor="#AC1414"  style="color: #FFFFFF" >Id Article</th>
+        <th bgcolor="#AC1414" style="color: #FFFFFF" >Sub Categorie</th>
+        <th bgcolor="#AC1414" style="color: #FFFFFF" >Saved Article</th>
+        <th bgcolor="#AC1414" style="color: #FFFFFF" colspan="2" >Action</th>
+        {% for article in articles %}
+            <tr >
+                <td style="color: #800000">{{ article.user.nom }} {{ article.user.prenom }}</td>
+                <td style="color: #800000" >{{ article.id }}</h5></td>
+                <td style="color: #800000">{{ article.SubCateg.nom }}</td>
+                <td style="color: #800000">{{ article.SavedA.id }}</td>
+                <td><a href="{{ path('entity_Article_modifier',{'id':article.id}) }}">Modifier </a></td>
+                <td><a href="{{ path('entity_Article_supprimer',{'id':article.id}) }}" >Supprimer </a></td>
+        {% endfor %}
+    </table>
+    <br><h3><a href="{{ path('entity_Article_ajouter') }}" >ajouter Article</a></h3>
+     <h3><a href="{{ path('entity_Article_rechercher') }}" >rechercher Article</a></h3>
+</center>
