@@ -1,0 +1,20 @@
+<center>
+    <h3>RECHERCHER UNE CATEGORIE</h3>
+    <table>
+        <form method="post">
+        <tr>
+            <td><label>id</label></td>
+            <td><input type="text" name="id" required><br></td>
+        </tr>
+            <tr><td><input type="submit" value="Chercher"></td></tr>
+        </form>
+    </table>
+    <br><br><br>
+    {% for CategoryArticle in CategoryArticles %}
+        <fieldset>
+            <legend>id Article {{ CategoryArticle.id }}</legend>
+            <b>Utilisateur : </b> {{ CategoryArticle.nom }}<br>
+        </fieldset>
+    {% endfor %}
+</center>
+
