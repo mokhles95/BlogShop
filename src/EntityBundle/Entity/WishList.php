@@ -28,6 +28,30 @@ class WishList
     private $id;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="libelle", type="string", length=255)
+     */
+
+    private $liblle;
+
+    /**
+     * @return string
+     */
+    public function getLiblle()
+    {
+        return $this->liblle;
+    }
+
+    /**
+     * @param string $liblle
+     */
+    public function setLiblle($liblle)
+    {
+        $this->liblle = $liblle;
+    }
+
+    /**
      * @return int
      */
     public function getId()

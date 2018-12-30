@@ -1,3 +1,56 @@
-moukhles_homepage:
+mokhles_homepage:
     path:     /
-    defaults: { _controller: MoukhlesBundle:Default:index }
+    defaults: { _controller: MokhlesBundle:Default:index }
+
+read_Produit:
+    path:     /read
+    defaults: { _controller: MokhlesBundle:Produit:read }
+
+create_Produit:
+    path:     /create
+    defaults: { _controller: MokhlesBundle:Produit:create }
+
+update_Produit:
+    path:     /update/{id}
+    defaults: { _controller: MokhlesBundle:Produit:update }
+
+delete_Produit:
+    path:     /delete/{id}
+    defaults: { _controller: MokhlesBundle:Produit:delete }
+
+read_Photo:
+    path:     /photo/read
+    defaults: { _controller: MokhlesBundle:PhotoProduit:read }
+
+create_Photo:
+    path:     /photo/create
+    defaults: { _controller: MokhlesBundle:PhotoProduit:create }
+
+update_Photo:
+    path:     /photo/update/{id}
+    defaults: { _controller: MokhlesBundle:PhotoProduit:update }
+
+delete_Photo:
+    path:     /photo/delete/{id}
+    defaults: { _controller: MokhlesBundle:PhotoProduit:delete }
+
+
+read_Taille:
+    path:     /taille/read
+    defaults: { _controller: MokhlesBundle:TailleProduit:read }
+
+create_Taille:
+    path:     /taille/create
+    defaults: { _controller: MokhlesBundle:TailleProduit:create }
+
+archiver_Taille:
+    path:     /taille/archiver/{id}
+    defaults: { _controller: MokhlesBundle:TailleProduit:archiver }
+desarchiver_Taille:
+    path:     /taille/desarchiver/{id}
+    defaults: { _controller: MokhlesBundle:TailleProduit:desarchiver }
+
+delete_Taille:
+    path:     /taille/delete/{id}
+    defaults: { _controller: MokhlesBundle:TailleProduit:delete }
+

@@ -19,7 +19,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new EntityBundle\EntityBundle(),
             new YosrBundle\YosrBundle(),
-            new MokhlesBundle\MoukhlesBundle(),
+            new MokhlesBundle\MokhlesBundle(),
             new ChaimaBundle\ChaimaBundle(),
             new WassimBundle\WassimBundle(),
             new SofieneBundle\SofieneBundle(),
@@ -27,6 +27,7 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new JMS\Payment\CoreBundle\JMSPaymentCoreBundle(),
             new JMS\Payment\PaypalBundle\JMSPaymentPaypalBundle(),
+            new Vich\UploaderBundle\VichUploaderBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

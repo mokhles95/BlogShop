@@ -1,0 +1,30 @@
+<h1> Les tailles</h1>
+
+<table border="1">
+    <tr>
+        <td>id</td>
+        <td>taille</td>
+        <td>etat</td>
+
+    </tr>
+
+    {% for t in tailles %}
+        <tr>
+            <td>{{ t.id}}</td>
+            <td>{{ t.libelle}}</td>
+            <td>{{ t.etat}}</td>
+            <td>
+                {% if t.etat == "actif" %}
+                    <a href="{{ path('archiver_Taille',{'id':t.id}) }}">Archiver</a>
+                {% else %}
+                    <a href="{{ path('desarchiver_Taille',{'id':t.id}) }}">Désarchiver</a>
+                {% endif %}
+
+            </td>
+
+
+
+        </tr>
+    {% endfor %}
+
+</table>

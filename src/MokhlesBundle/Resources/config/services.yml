@@ -1,4 +1,4 @@
 services:
 #    moukhles.example:
-#        class: MoukhlesBundle\Example
+#        class: MokhlesBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]

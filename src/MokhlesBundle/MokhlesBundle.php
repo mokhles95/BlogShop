@@ -4,6 +4,6 @@ namespace MokhlesBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class MoukhlesBundle extends Bundle
+class MokhlesBundle extends Bundle
 {
 }
