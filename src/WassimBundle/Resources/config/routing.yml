@@ -1,3 +1,15 @@
-wassim_homepage:
-    path:     /
+authorized_comments_afficher:
+    path:     /authorizedcomments
     defaults: { _controller: WassimBundle:Default:index }
+authorized_comments_edit:
+  path:     /authorizedcomments/edit/{id}
+  defaults: { _controller: WassimBundle:Default:edit }
+authorized_comments_delete:
+  path:     /authorizedcomments/delete/{id}
+  defaults: { _controller: WassimBundle:Default:delete }
+commenting_system_tester:
+  path:     /commenting
+  defaults: { _controller: WassimBundle:CommentingSystem:index }
+commenting_system_afficher:
+  path:     /commenting/afficher/{userid}/{articleid}
+  defaults: { _controller: WassimBundle:CommentingSystem:afficher }

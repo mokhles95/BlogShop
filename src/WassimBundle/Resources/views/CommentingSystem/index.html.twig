@@ -1,0 +1,25 @@
+{% extends '@Wassim/base.html.twig' %}
+{% block body %}
+    </br> </br>
+    <center><h1>Commenting System Tester</h1></center>
+    </br> </br>
+
+        <center><form action="{{ path('commenting_system_tester') }}" method="post"
+            <fieldset>
+                <h3> Enter UserID </h3>
+                <div action "" class="form-group">
+                <input type="number" min="0" step="1" class="form-control" name="userid" placeholder="Put User ID Here">
+                <h3> Enter ArticleID </h3>
+                <div action "" class="form-group">
+                <input type="number" min="0" step="1" class="form-control" name="articleid" placeholder="Put Article ID Here">
+
+                </div>
+    <button type="submit" class="btn btn-primary">GO !</button>
+    </fieldset>
+    </form></center>
+    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+
+
+    </div>
+{% endblock %}

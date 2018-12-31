@@ -1,3 +1,7 @@
+yosr:
+    resource: "@YosrBundle/Resources/config/routing.yml"
+    prefix:   /
+
 seif:
     resource: "@SeifBundle/Resources/config/routing.yml"
     prefix:   /
@@ -19,10 +23,6 @@ chaima:
 
 moukhles:
     resource: "@MoukhlesBundle/Resources/config/routing.yml"
-    prefix:   /
-
-yosr:
-    resource: "@YosrBundle/Resources/config/routing.yml"
     prefix:   /
 
 entity:
