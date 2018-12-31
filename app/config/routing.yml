@@ -17,8 +17,8 @@ chaima:
     resource: "@ChaimaBundle/Resources/config/routing.yml"
     prefix:   /
 
-moukhles:
-    resource: "@MoukhlesBundle/Resources/config/routing.yml"
+mokhles:
+    resource: "@MokhlesBundle/Resources/config/routing.yml"
     prefix:   /
 
 yosr:

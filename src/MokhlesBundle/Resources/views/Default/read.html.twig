@@ -1,0 +1,31 @@
+<h1>Liste des Produits</h1>
+
+<table border="1">
+    <tr>
+        <td>#</td>
+        <td>Titre</td>
+        <td>Description</td>
+        <td>Date de création</td>
+        <td>Etat</td>
+        <td>Prix</td>
+
+    </tr>
+
+    {% for p in produits %}
+        <tr>
+            <td>{{ p.id}}</td>
+
+            <td>{{ p.libelleFr}}</td>
+            <td>{{ p.decFr}}</td>
+            <td>{{ p.date|date("m/d/Y") }}
+                </td>
+            <td>{{ p.etat}}</td>
+            <td>{{ p.prix}}</td>
+            <td><a href="{{ path('update_Produit',{'id':p.id}) }}">Update</a></td>
+            <td><a href="{{ path('delete_Produit',{'id':p.id}) }}">Delete</a></td>
+
+
+        </tr>
+    {% endfor %}
+
+</table>

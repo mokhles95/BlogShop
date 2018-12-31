@@ -1,0 +1,24 @@
+<h1>Liste des Photos</h1>
+
+<table border="1">
+    <tr>
+        <td>id</td>
+        <td>Nom</td>
+        <td>image</td>
+
+    </tr>
+
+    {% for ph in photos %}
+        <tr>
+            <td>{{ ph.id}}</td>
+            <td>{{ ph.nom}}</td>
+            <td><img style="width: 200px ; height: auto" data-wow-delay=".5s"
+                     src="{{ asset('uploads/'~ ph.imagename) }}" alt="" /></td>
+
+
+            <td><a href="{{ path('update_Photo',{'id':ph.id}) }}">Update</a></td>
+            <td><a href="{{ path('delete_Photo',{'id':ph.id}) }}">Delete</a></td>
+        </tr>
+    {% endfor %}
+
+</table>

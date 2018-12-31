@@ -4,7 +4,7 @@ imports:
     - { resource: services.yml }
     - { resource: "@EntityBundle/Resources/config/services.yml" }
     - { resource: "@YosrBundle/Resources/config/services.yml" }
-    - { resource: "@MoukhlesBundle/Resources/config/services.yml" }
+    - { resource: "@MokhlesBundle/Resources/config/services.yml" }
     - { resource: "@ChaimaBundle/Resources/config/services.yml" }
     - { resource: "@WassimBundle/Resources/config/services.yml" }
     - { resource: "@SofieneBundle/Resources/config/services.yml" }
@@ -92,3 +92,13 @@ jms_payment_paypal:
     username: your_api_username # not your account username
     password: your_api_password # not your account password
     signature: your_api_signature
+
+vich_uploader:
+  db_driver: orm
+  mappings:
+    product_image:
+      uri_prefix: /uploads/
+      upload_destination: '%kernel.root_dir%/../web/uploads/'
+      inject_on_load: false
+      delete_on_update: true
+      delete_on_remove: true
