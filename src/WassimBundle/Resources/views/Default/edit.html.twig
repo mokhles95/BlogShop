@@ -1,0 +1,25 @@
+{% extends '@Wassim/base.html.twig' %}
+{% block body %}
+    </br> </br> </br> </br>
+    <center><h1>Authorized Comments Editor</h1></center>
+    </br> </br>
+    <form action="" method="post"
+        <fieldset>
+            <legend>You are editing : <h3> {{ AuthorizedComment.comment }}</h3></legend>
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="comment" placeholder="Enter the new comment's content here !">
+
+            </div>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+            <input type="button" class="btn btn-primary" value="Delete This Comment" onclick="window.location.href=' {{ path('authorized_comments_delete',{'id':AuthorizedComment.id}) }}'" />
+
+        </fieldset>
+    </form>
+
+        </br>
+        </br>
+        </br>
+
+    </div>
+{% endblock %}
