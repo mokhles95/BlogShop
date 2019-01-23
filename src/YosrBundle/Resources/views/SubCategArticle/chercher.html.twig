@@ -1,0 +1,21 @@
+<center>
+    <h3>RECHERCHER UNE CATEGORIE</h3>
+    <table>
+        <form method="post">
+        <tr>
+            <td><label>id</label></td>
+            <td><input type="text" name="id" required><br></td>
+        </tr>
+            <tr><td><input type="submit" value="Chercher"></td></tr>
+        </form>
+    </table>
+    <br><br><br>
+    {% for SubCategArticle in SubCategArticles %}
+        <fieldset>
+            <legend>id Article {{ SubCategArticle.id }}</legend>
+            <b>nom : </b> {{ SubCategArticle.nom }}<br>
+            <b>Category : </b> {{ SubCategArticle.category.nom }}<br>
+        </fieldset>
+    {% endfor %}
+</center>
+

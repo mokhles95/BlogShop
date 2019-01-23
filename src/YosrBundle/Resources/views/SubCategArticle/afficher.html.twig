@@ -1,0 +1,19 @@
+<center>
+    <h1 style="color: #A43E4C">Categorie Articles </h1>
+    <table border="2" id="tab" >
+        <th bgcolor="#AC1414"  style="color: #FFFFFF" >Id Article</th>
+        <th bgcolor="#AC1414" style="color: #FFFFFF" >nom</th>
+        <th bgcolor="#AC1414" style="color: #FFFFFF" >Categorie</th>
+        <th bgcolor="#AC1414" style="color: #FFFFFF" colspan="2" >Action</th>
+        {% for SubCategarticle in SubCategArticles %}
+            <tr >
+
+                <td style="color: #800000" >{{ SubCategarticle.id }}</h5></td>
+                <td style="color: #800000">{{ SubCategarticle.nom }}</td>
+                <td style="color: #800000">{{ SubCategarticle.category.nom }}</td>
+                <td><a href="{{ path('entity_SubCategArticle_modifier',{'id':SubCategarticle.id}) }}">Modifier </a></td>
+        {% endfor %}
+    </table>
+    <br><h3><a href="{{ path('entity_SubCategArticle_ajouter') }}" >ajouter Article</a></h3>
+    <h3><a href="{{ path('entity_SubCategArticle_rechercher') }}" >rechercher Article</a></h3>
+</center>
