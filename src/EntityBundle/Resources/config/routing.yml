@@ -1,3 +1,53 @@
 entity_homepage:
-    path:     /
+    path:     /E
     defaults: { _controller: EntityBundle:Default:index }
+entity_user_afficher:
+    path:     /user/afficher
+    defaults: { _controller: EntityBundle:User:afficher }
+entity_Article_afficher:
+    path:     /Article/afficher
+    defaults: { _controller: EntityBundle:Article:afficher }
+entity_Article_rechercher:
+    path:     /Article/rechercher
+    defaults: { _controller: EntityBundle:Article:rechercher }
+entity_Article_ajouter:
+    path:     /Article/ajouter
+    defaults: { _controller: EntityBundle:Article:ajouter }
+entity_Article_modifier:
+    path:     /Article/modifier
+    defaults: { _controller: EntityBundle:Article:modifier }
+entity_Article_supprimer:
+    path:     /Article/supprimer
+    defaults: { _controller: EntityBundle:Article:supprimer }
+entity_Article_trier:
+    path:     /Article/tri
+    defaults: { _controller: EntityBundle:Article:tri }
+
+entity_CategArticle_afficher:
+    path:     /CategArticle/afficher
+    defaults: { _controller: EntityBundle:CategoryArticle:afficher }
+entity_CategArticle_rechercher:
+    path:     /CategArticle/rechercher
+    defaults: { _controller: EntityBundle:CategoryArticle:rechercher }
+entity_CategArticle_ajouter:
+    path:     /CategArticle/ajouter
+    defaults: { _controller: EntityBundle:CategoryArticle:ajouter }
+entity_CategArticle_modifier:
+    path:     /CategArticle/modifier
+    defaults: { _controller: EntityBundle:CategoryArticle:modifier}
+entity_CategArticle_supprimer:
+    path:     /CategArticle/supprimer
+    defaults: { _controller: EntityBundle:CategoryArticle:supprimer }
+
+entity_SubCategArticle_afficher:
+    path:     /SubCategArticle/afficher
+    defaults: { _controller: EntityBundle:SubCategArticle:afficher }
+entity_SubCategArticle_rechercher:
+    path:     /SubCategArticle/rechercher
+    defaults: { _controller: EntityBundle:SubCategArticle:rechercher }
+entity_SubCategArticle_ajouter:
+    path:     /SubCategArticle/ajouter
+    defaults: { _controller: EntityBundle:SubCategArticle:ajouter }
+entity_SubCategArticle_modifier:
+    path:     /SubCategArticle/modifier
+    defaults: { _controller: EntityBundle:SubCategArticle:modifier}
