@@ -29,10 +29,80 @@ class Commande
     private $id;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="date", type="date", nullable=true)
+     */
+    private $date;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="etat", type="string", nullable=true)
+     */
+    private $etat;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="total", type="float", nullable=true)
+     */
+    private $total;
+
+    /**
+     * @return float
+     */
+    public function getTotal()
+    {
+        return $this->total;
+    }
+
+    /**
+     * @param float $total
+     */
+    public function setTotal($total)
+    {
+        $this->total = $total;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEtat()
+    {
+        return $this->etat;
+    }
+
+    /**
+     * @param string $etat
+     */
+    public function setEtat($etat)
+    {
+        $this->etat = $etat;
+    }
+    /**
+     * @return mixed
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param mixed $date
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
+    }
+
+    /**
+     * @var \EntityBundle\Entity\User
+     *
      * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
      */
     private $user;
+
+
 
     /**
      * @return mixed
@@ -49,6 +119,8 @@ class Commande
     {
         $this->user = $user;
     }
+
+
 
     /**
      * @return int
