@@ -1,0 +1,22 @@
+<center>
+    <h3>LISTE DES Article</h3>
+    <table border="2" id="tab">
+        <th>Id Article</th>
+        <th>Utilisateur</th>
+        <th>Sub cathegorie</th>
+        <th>Saved Article</th>
+        <th bgcolor="#b22222" align="center" colspan="2" >Action</th>
+        {% for article in articles %}
+        <tr >
+            <td style="color: #800000">{{ article.user.nom }} {{ article.user.prenom }}</td>
+            <td style="color: #800000" >{{ article.id }}</h5></td>
+            <td style="color: #800000">{{ article.SubCateg.nom }}</td>
+            <td style="color: #800000">{{ article.SavedA.id }}</td>
+            <td><a href="{{ path('yosr_Article_modifier',{'id':article.id}) }}">Modifier </a></td>
+            <td><a href="{{ path('yosr_Article_supprimer',{'id':article.id}) }}" >Supprimer </a></td>
+            {% endfor %}
+    </table>
+    <br><br><br>
+    <br><h3><a href="{{ path('yosr_Article_ajouter') }}" >ajouter Article</a></h3>
+</center>
+
