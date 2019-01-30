@@ -1,0 +1,29 @@
+detailcommande_index:
+    path:     /
+    defaults: { _controller: "EntityBundle:DetailCommande:index" }
+    methods:  GET
+
+detailcommande_show:
+    path:     /{id}/show
+    defaults: { _controller: "EntityBundle:DetailCommande:show" }
+    methods:  GET
+
+detailcommande_new:
+    path:     /new
+    defaults: { _controller: "EntityBundle:DetailCommande:new" }
+    methods:  [GET, POST]
+
+detailcommande_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "EntityBundle:DetailCommande:edit" }
+    methods:  [GET, POST]
+
+detailcommande_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "EntityBundle:DetailCommande:delete" }
+    methods:  DELETE
+
+details:
+    path:     /{id}/details
+    defaults: { _controller: "EntityBundle:DetailCommande:Details" }
+

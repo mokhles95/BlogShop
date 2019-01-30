@@ -51,3 +51,6 @@ entity_SubCategArticle_ajouter:
 entity_SubCategArticle_modifier:
     path:     /SubCategArticle/modifier
     defaults: { _controller: EntityBundle:SubCategArticle:modifier}
+panier:
+    resource: "@EntityBundle/Resources/config/routing/panier.yml"
+    prefix:   /panier

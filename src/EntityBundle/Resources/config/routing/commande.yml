@@ -1,0 +1,14 @@
+commande_index:
+    path:     /
+    defaults: { _controller: "EntityBundle:Commande:index" }
+    methods:  GET
+
+commande_show:
+    path:     /{id}/show
+    defaults: { _controller: "EntityBundle:Commande:show" }
+    methods:  GET
+
+confirmer:
+    path:     /{id}/confirmer
+    defaults: { _controller: "EntityBundle:Commande:Confirmer" }
+

@@ -1,0 +1,19 @@
+panier_index:
+    path:     /
+    defaults: { _controller: "ChaimaBundle:Panier:Basket" }
+    methods:  GET
+
+show_panier:
+    path:   /shpanier
+    defaults: { _controller: ChaimaBundle:Panier:Basket }
+
+P_ajouter:
+    path:    /{id}/{t}/Ajouter
+    defaults: { _controller: "ChaimaBundle:Panier:Ajouter" }
+
+P_supprimmer:
+    path:     /{id}/{ps}/Supprimmer
+    defaults: { _controller: "ChaimaBundle:Panier:Supprimmer" }
+P_pass:
+    path:     /{total}/Pass
+    defaults: { _controller: "ChaimaBundle:Panier:Pass" }
