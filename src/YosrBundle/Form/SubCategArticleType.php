@@ -1,6 +1,6 @@
 <?php
 
-namespace EntityBundle\Form;
+namespace YosrBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -18,7 +18,7 @@ class SubCategArticleType extends AbstractType
         $builder
             ->add('nom')
             ->add('category',EntityType::class,array(
-                'class'=>'EntityBundle:CategoryArticle',
+                'class'=>'YosrBundle:CategoryArticle',
                 'choice_label'=>'nom',
                 'multiple'=>false
             ))
@@ -30,7 +30,7 @@ class SubCategArticleType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'EntityBundle\Entity\SubCategArticle'
+            'data_class' => 'YosrBundle\Entity\SubCategArticle'
         ));
     }
 

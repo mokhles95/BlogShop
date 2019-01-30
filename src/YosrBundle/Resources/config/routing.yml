@@ -1,40 +1,53 @@
-entity_homepage:
-    path:     /E
-    defaults: { _controller: EntityBundle:Default:index }
-entity_user_afficher:
+yosr_homepage:
+    path:     /
+    defaults: { _controller: YosrBundle:Default:index }
+yosr_user_afficher:
     path:     /user/afficher
-    defaults: { _controller: EntityBundle:User:afficher }
-entity_Article_afficher:
+    defaults: { _controller: YosrBundle:User:afficher }
+yosr_Article_afficher:
     path:     /Article/afficher
-    defaults: { _controller: EntityBundle:Article:afficher }
-entity_Article_rechercher:
+    defaults: { _controller: YosrBundle:Article:afficher }
+yosr_Article_rechercher:
     path:     /Article/rechercher
-    defaults: { _controller: EntityBundle:Article:rechercher }
-entity_Article_ajouter:
+    defaults: { _controller: YosrBundle:Article:rechercher }
+yosr_Article_ajouter:
     path:     /Article/ajouter
-    defaults: { _controller: EntityBundle:Article:ajouter }
-entity_Article_modifier:
+    defaults: { _controller: YosrBundle:Article:ajouter }
+yosr_Article_modifier:
     path:     /Article/modifier
-    defaults: { _controller: EntityBundle:Article:modifier }
-entity_Article_supprimer:
+    defaults: { _controller: YosrBundle:Article:modifier }
+yosr_Article_supprimer:
     path:     /Article/supprimer
-    defaults: { _controller: EntityBundle:Article:supprimer }
-entity_Article_trier:
+    defaults: { _controller: YosrBundle:Article:supprimer }
+yosr_Article_trier:
     path:     /Article/tri
-    defaults: { _controller: EntityBundle:Article:tri }
+    defaults: { _controller: YosrBundle:Article:tri }
 
-entity_CategArticle_afficher:
+yosr_CategArticle_afficher:
     path:     /CategArticle/afficher
-    defaults: { _controller: EntityBundle:CategoryArticle:afficher }
-entity_CategArticle_rechercher:
+    defaults: { _controller: YosrBundle:CategoryArticle:afficher }
+yosr_CategArticle_rechercher:
     path:     /CategArticle/rechercher
-    defaults: { _controller: EntityBundle:CategoryArticle:rechercher }
-entity_CategArticle_ajouter:
+    defaults: { _controller: YosrBundle:CategoryArticle:rechercher }
+yosr_CategArticle_ajouter:
     path:     /CategArticle/ajouter
-    defaults: { _controller: EntityBundle:CategoryArticle:ajouter }
-entity_CategArticle_modifier:
+    defaults: { _controller: YosrBundle:CategoryArticle:ajouter }
+yosr_CategArticle_modifier:
     path:     /CategArticle/modifier
-    defaults: { _controller: EntityBundle:CategoryArticle:modifier}
-entity_CategArticle_supprimer:
+    defaults: { _controller: YosrBundle:CategoryArticle:modifier}
+yosr_CategArticle_supprimer:
     path:     /CategArticle/supprimer
-    defaults: { _controller: EntityBundle:CategoryArticle:supprimer }
+    defaults: { _controller: YosrBundle:CategoryArticle:supprimer }
+
+yosr_SubCategArticle_afficher:
+    path:     /SubCategArticle/afficher
+    defaults: { _controller: YosrBundle:SubCategArticle:afficher }
+yosr_SubCategArticle_rechercher:
+    path:     /SubCategArticle/rechercher
+    defaults: { _controller: YosrBundle:SubCategArticle:rechercher }
+yosr_SubCategArticle_ajouter:
+    path:     /SubCategArticle/ajouter
+    defaults: { _controller: YosrBundle:SubCategArticle:ajouter }
+yosr_SubCategArticle_modifier:
+    path:     /SubCategArticle/modifier
+    defaults: { _controller: YosrBundle:SubCategArticle:modifier}

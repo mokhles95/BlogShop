@@ -6,13 +6,13 @@
  * Time: 23:16
  */
 
-namespace EntityBundle\Controller;
+namespace YosrBundle\Controller;
 
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use EntityBundle\Entity\Article;
-use EntityBundle\Form\ArticleType;
+use YosrBundle\Entity\Article;
+use YosrBundle\Form\ArticleType;
 
 
 class ArticleController extends Controller
@@ -21,21 +21,21 @@ class ArticleController extends Controller
     public function afficherAction()
     {
         $em=$this->getDoctrine()->getManager();
-        $Article = $em->getRepository("EntityBundle:Article")->findAll();
-        return $this->render('@Entity/Article/afficher.html.twig',array("articles"=>$Article));
+        $Article = $em->getRepository("YosrBundle:Article")->findAll();
+        return $this->render('@Yosr/Article/afficher.html.twig',array("articles"=>$Article));
     }
 
     public function rechercherAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $Article = $em ->getRepository("EntityBundle:Article")->findAll();
+        $Article = $em ->getRepository("YosrBundle:Article")->findAll();
         if($request->isMethod('POST')) {
             $id = $request->get('id');
             $em = $this->getDoctrine()->getManager();
-            $Article = $em ->getRepository("EntityBundle:Article")
+            $Article = $em ->getRepository("YosrBundle:Article")
                 ->findBy(array("id"=>$id));
         }
-        return $this->render('@Entity/Article/chercher.html.twig',array("articles"=>$Article));
+        return $this->render('@Yosr/Article/chercher.html.twig',array("articles"=>$Article));
     }
 
     public function ajouterAction(Request $request){
@@ -46,10 +46,10 @@ class ArticleController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($Article);
             $em->flush();
-            return $this->redirectToRoute('entity_Article_afficher');
+            return $this->redirectToRoute('yosr_Article_afficher');
 
         }
-        return $this->render('@Entity/Article/ajouter.html.twig',array(
+        return $this->render('@Yosr/Article/ajouter.html.twig',array(
             "Form"=>$form->createView()
         ));
     }
@@ -58,15 +58,15 @@ class ArticleController extends Controller
     {
         $id = $request->get('id');
         $em = $this->getDoctrine()->getManager();
-        $Article = $em->getRepository('EntityBundle:Article')->find($id);
+        $Article = $em->getRepository('YosrBundle:Article')->find($id);
         $form = $this->createForm(ArticleType::class,$Article);
         $form->handleRequest($request);   //éxecuter
         if($form->isSubmitted()&& $form->isValid()){
             $em->persist($Article);
             $em->flush();
-            return $this->redirectToRoute('entity_Article_afficher');
+            return $this->redirectToRoute('yosr_Article_afficher');
         }
-        return $this->render('@Entity/Article/modifier.html.twig',
+        return $this->render('@Yosr/Article/modifier.html.twig',
             array("Form"=>$form->createView()));
     }
 
@@ -74,10 +74,10 @@ class ArticleController extends Controller
     {
         $id = $request->get('id');
         $em = $this->getDoctrine()->getManager();   //créer une instance de l'entité manager (action avec la base )
-        $Article = $em ->getRepository("EntityBundle:Article") ->find($id);
+        $Article = $em ->getRepository("YosrBundle:Article") ->find($id);
         $em->remove($Article); //supprime le modéle
         $em->flush();   //actualiser
-        return $this->redirectToRoute('entity_Article_afficher');
+        return $this->redirectToRoute('yosr_Article_afficher');
     }
 
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace EntityBundle\Form;
+namespace YosrBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -17,26 +17,22 @@ class ArticleType extends AbstractType
     {
         $builder
             ->add('User',EntityType::class,array(
-                'class'=>'EntityBundle:User',
-                'choice_label'=>'id',
+                'class'=>'YosrBundle:User',
+                'choice_label'=>'nom',
                 'multiple'=>false
             ))
 
             ->add('SubCateg',EntityType::class,array(
-                'class'=>'EntityBundle:SubCategArticle',
-                'choice_label'=>'id',
+                'class'=>'YosrBundle:SubCategArticle',
+                'choice_label'=>'nom',
                 'multiple'=>false
             ))
 
             ->add('savedA',EntityType::class,array(
-                'class'=>'EntityBundle:savedArticle',
+                'class'=>'YosrBundle:savedArticle',
                 'choice_label'=>'id',
                 'multiple'=>false
             ))
-
-
-
-
 
             ->add('valider',submitType::class );
     }/**
@@ -45,7 +41,7 @@ class ArticleType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'EntityBundle\Entity\Article'
+            'data_class' => 'YosrBundle\Entity\Article'
         ));
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace EntityBundle\Form;
+namespace YosrBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -23,7 +23,7 @@ class CategoryArticleType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'EntityBundle\Entity\CategoryArticle'
+            'data_class' => 'YosrBundle\Entity\CategoryArticle'
         ));
     }
 
