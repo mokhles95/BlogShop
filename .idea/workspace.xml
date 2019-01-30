@@ -89,8 +89,8 @@
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/EntityBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+            <state relative-caret-position="333">
+              <caret line="61" column="29" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -413,6 +413,10 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Composer" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="BlogShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -458,12 +462,12 @@
       <workItem from="1545163603036" duration="10494000" />
       <workItem from="1545214717251" duration="2786000" />
       <workItem from="1548676882923" duration="7674000" />
-      <workItem from="1548698199206" duration="5696000" />
+      <workItem from="1548698199206" duration="5957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30704000" />
+    <option name="totallyTimeSpent" value="30965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -849,8 +853,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EntityBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        <state relative-caret-position="333">
+          <caret line="61" column="29" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
           <folding />
         </state>
       </provider>

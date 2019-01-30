@@ -54,3 +54,9 @@ entity_SubCategArticle_modifier:
 panier:
     resource: "@EntityBundle/Resources/config/routing/panier.yml"
     prefix:   /panier
+entity_commande:
+    resource: "@EntityBundle/Resources/config/routing/commande.yml"
+    prefix:   /commande
+entity_detailcommande:
+    resource: "@EntityBundle/Resources/config/routing/detailcommande.yml"
+    prefix:   /detailcommande
